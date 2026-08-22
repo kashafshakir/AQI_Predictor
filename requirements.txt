@@ -2,7 +2,9 @@ pymongo==4.10.1
 scikit-learn==1.6.1
 xgboost==2.1.4
 streamlit>=1.40.0,<2.0
-starlette>=0.40.0
+fastapi>=0.116.0
+uvicorn>=0.34.0
+starlette>=0.45.0
 shap>=0.48.0
 pandas==2.2.3
 numpy==2.1.3
