@@ -1,0 +1,62 @@
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Virtual environments (use .venv311 locally — do not commit)
+venv/
+.venv/
+.venv311/
+.venv*/
+
+# Python build / cache
+*.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+.Python
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local-only dev utilities (not part of CI/CD)
+show_model_metrics.py
+metrics_report.json
+debug-*.log
+problem statement.txt
+*.txt.bak
+
+# Legacy / removed paths
+src/app/
+
+# Data & model artifacts (regenerate locally or via pipelines)
+data/*.csv
+data/*.parquet
+models_artifacts/
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit (only ignore real secrets, keep config.toml + example)
+.streamlit/secrets.toml
+
+# Report images (regenerate from notebook)
+report/*.png
+
+# EDA notebook exports (regenerate from notebooks/eda_quick.ipynb)
+notebooks/visuals/*.png
+!notebooks/visuals/.gitkeep
